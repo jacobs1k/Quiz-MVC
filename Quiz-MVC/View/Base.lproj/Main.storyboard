@@ -37,6 +37,9 @@
                                                 <color key="backgroundColor" red="0.33725491169999999" green="0.27450981740000002" blue="0.270588249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGK-zM-sQo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jry-lA-Net">
                                         <rect key="frame" x="0.0" y="579" width="353" height="80"/>
@@ -50,6 +53,9 @@
                                                 <color key="backgroundColor" red="0.33725491169999999" green="0.27450981740000002" blue="0.270588249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1hX-44-p8g"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVo-rs-sa2">
                                         <rect key="frame" x="0.0" y="664" width="353" height="80"/>
@@ -63,6 +69,9 @@
                                                 <color key="backgroundColor" red="0.33725491169999999" green="0.27450981740000002" blue="0.270588249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gx1-u1-P5k"/>
+                                        </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cUx-wT-Xbb">
                                         <rect key="frame" x="0.0" y="749" width="353" height="10"/>
@@ -83,6 +92,13 @@
                             <constraint firstItem="DCg-q9-Mkp" firstAttribute="trailing" secondItem="FQf-z4-sn9" secondAttribute="trailing" constant="20" id="yOZ-Ch-fKR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonA" destination="SU7-J9-amj" id="cbt-cB-TTU"/>
+                        <outlet property="buttonB" destination="jry-lA-Net" id="ajg-Jn-cU9"/>
+                        <outlet property="buttonC" destination="qVo-rs-sa2" id="dT9-Q4-0E0"/>
+                        <outlet property="progressBar" destination="c0Y-c2-nDc" id="mgl-C4-vMQ"/>
+                        <outlet property="questionLabel" destination="gOQ-C7-YbX" id="sfI-nE-pFN"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-112" y="-28"/>
