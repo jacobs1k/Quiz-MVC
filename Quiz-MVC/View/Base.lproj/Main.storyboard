@@ -10,7 +10,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz_MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AGS-us-PBI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -19,26 +18,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FQf-z4-sn9">
                                 <rect key="frame" x="20" y="59" width="353" height="759"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOQ-C7-YbX">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="489"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yi-Fb-U8x">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="DIf-y0-qLk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.99607843159999998" green="0.97254908080000002" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOQ-C7-YbX">
+                                        <rect key="frame" x="0.0" y="25" width="353" height="464"/>
                                         <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="35"/>
                                         <color key="textColor" red="0.99607843159999998" green="0.97254908080000002" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SU7-J9-amj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtm-oT-7Np">
                                         <rect key="frame" x="0.0" y="494" width="353" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="DqP-dY-Md9"/>
+                                            <constraint firstAttribute="height" constant="80" id="awV-io-WBw"/>
                                         </constraints>
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.99607843159999998" green="0.97254908080000002" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <backgroundConfiguration key="background" cornerRadius="20">
-                                                <color key="backgroundColor" red="0.33725491169999999" green="0.27450981740000002" blue="0.270588249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.34901960780000002" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGK-zM-sQo"/>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DfC-Hn-yzq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jry-lA-Net">
@@ -93,13 +101,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonA" destination="SU7-J9-amj" id="cbt-cB-TTU"/>
+                        <outlet property="buttonA" destination="mtm-oT-7Np" id="faR-0n-6rV"/>
                         <outlet property="buttonB" destination="jry-lA-Net" id="ajg-Jn-cU9"/>
                         <outlet property="buttonC" destination="qVo-rs-sa2" id="dT9-Q4-0E0"/>
-                        <outlet property="progressBar" destination="c0Y-c2-nDc" id="mgl-C4-vMQ"/>
+                        <outlet property="progressBar" destination="cUx-wT-Xbb" id="DbO-Po-nwx"/>
                         <outlet property="questionLabel" destination="gOQ-C7-YbX" id="sfI-nE-pFN"/>
+                        <outlet property="scoreLabel" destination="6yi-Fb-U8x" id="LgT-wt-I0n"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-112" y="-28"/>
         </scene>

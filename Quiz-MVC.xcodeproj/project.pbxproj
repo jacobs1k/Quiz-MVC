@@ -17,6 +17,7 @@
 		F122529F296F628000B1B96C /* Quiz_MVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122529E296F628000B1B96C /* Quiz_MVCUITests.swift */; };
 		F12252A1296F628000B1B96C /* Quiz_MVCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12252A0296F628000B1B96C /* Quiz_MVCUITestsLaunchTests.swift */; };
 		F12252B2296F767E00B1B96C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12252B1296F767E00B1B96C /* Question.swift */; };
+		F12252B7296F78EB00B1B96C /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12252B6296F78EB00B1B96C /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F122529E296F628000B1B96C /* Quiz_MVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_MVCUITests.swift; sourceTree = "<group>"; };
 		F12252A0296F628000B1B96C /* Quiz_MVCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_MVCUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F12252B1296F767E00B1B96C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		F12252B6296F78EB00B1B96C /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				F12252B1296F767E00B1B96C /* Question.swift */,
+				F12252B6296F78EB00B1B96C /* QuizBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12252B7296F78EB00B1B96C /* QuizBrain.swift in Sources */,
 				F1225282296F627E00B1B96C /* ViewController.swift in Sources */,
 				F12252B2296F767E00B1B96C /* Question.swift in Sources */,
 				F122527E296F627E00B1B96C /* AppDelegate.swift in Sources */,
